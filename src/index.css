@@ -1,0 +1,21 @@
+body {
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("./assets/bgimg.png");
+}
+
+* {
+  box-sizing: border-box; /* Ensures padding and borders are included in element widths */
+}
+
+.navbar {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+  height: 60px; /* Set a fixed height */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}

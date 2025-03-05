@@ -1,0 +1,62 @@
+.productCard {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.description-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50px; /* Avoid overlap with the button */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  z-index: 1;
+  text-align: center;
+}
+
+.productCard:hover .description-overlay {
+  opacity: 1;
+}
+
+.card-body {
+  position: relative;
+  z-index: 2;
+  padding-top: 10px;
+}
+
+.card-price {
+  font-weight: bold;
+  color: green;
+}
+
+.button-container {
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.alert {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
